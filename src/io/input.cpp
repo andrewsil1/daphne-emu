@@ -300,10 +300,10 @@ int SDL_input_init()
 			// if there is at least 1 joystick and we are authorized to use the joystick for input
 			if (SDL_NumJoysticks() > 0)
 			{
-				G_joystick = SDL_JoystickOpen(0);	// FIXME: right now we automatically choose the first joystick
+				G_joystick = SDL_JoystickOpen(1);	// FIXME: right now we automatically choose the first joystick
 				if (G_joystick != NULL)
 				{
-					printline("Joystick #0 was successfully opened");
+					printline("Joystick #1 was successfully opened");
 				}
 				else
 				{

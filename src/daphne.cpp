@@ -224,7 +224,8 @@ int main(int argc, char **argv)
 									// Send our game/ldp type to server to create stats.
 									// This was moved to after the game has finished running because it creates a slight delay (like 1 second),
 									//  which throws off the think_delay function in the LDP class.
-									net_send_data_to_server();
+ 									// NB: disabled since the stats server is offline and it delays the shutdown
+									// net_send_data_to_server();
 
 									result_code = 0;	// daphne will exit without any errors
 								}
